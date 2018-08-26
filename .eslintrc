@@ -7,6 +7,44 @@
     "es6": true
   },
   "rules": {
-    // TODO place rules here
+    "brace-style": "error",
+    "camelcase": "error",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-style": ["error", "last"],
+    "computed-property-spacing": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "func-call-spacing": ["error", "always"],
+    "func-names": ["warn", "always"],
+    "implicit-arrow-linebreak": ["error", "beside"],
+    "indent": "error",
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "max-len": ["error", { "code": 80, "ignoreComments": true, "ignoreStrings": true }],
+    "new-parens": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multi-assign": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+    "no-new-object": "error",
+    "no-plusplus": "error",
+    "no-restricted-syntax": ["error", {
+      "selector": "ForInStatement",
+      "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+    }
+    ],
+    "no-spaced-func": "error",
+    "no-tabs": "error",
+    "no-underscore-dangle": "error",
+    "nonblock-statement-body-position": ["error", "beside"],
+    "padded-blocks": ["error", { "blocks": "never" }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "semi-spacing": ["error", {"before": false, "after": true}],
+    "semi-style": ["error", "last"],
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "spaced-comment": ["error", "always"]
+
   }
 }
